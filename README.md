@@ -118,7 +118,7 @@ Want different results? Double-click your HTTP Request Node and change the keywo
 <img width="911" height="440" alt="query" src="https://github.com/user-attachments/assets/99312c37-9adb-4fdb-8b51-53e421c3cb2f" />
 
 ### Authentication
-Currently, the workflow queries Membit without authentication, which is risky. To fix this:
+Although some Membit endpoints may respond without authentication, it is recommended to always configure Header Auth to ensure compatibility with protected endpoints and future API updates.
 
 - Open your HTTP Request Node.
 - Set Authentication to Generic Credential.
