@@ -1,7 +1,7 @@
 # 🧠 Membit – n8n Integration Guide
 This repository provides a clear, reliable method for integrating Membit into n8n using only the Membit REST API, designed specifically for users who do not have access to the MCP Tool but still need full Membit functionality.
 
-Membit’s documentation historically referenced “MCP Tools,” but many users only have access to MCP Trigger, which is not the same and cannot be used to send data to Membit.
+Membit's documentation historically referenced “MCP Tools,” but many users only have access to MCP Trigger, which is not the same and cannot be used to send data to Membit.
 This guide documents the correct and stable approach.
 
 ---
@@ -93,8 +93,8 @@ curl --request GET \
 
   <img width="539" height="229" alt="cURL" src="https://github.com/user-attachments/assets/a4aab9b0-1288-41cb-bb8f-74d154d043db" />
 
-> **Note:** Replace "api-key" with your actual api key. do not remove the single qoute at the end of the api key.
-> Example: X-Membit-Api-Key:123456789'.
+> **Note:** Replace `<api-key>` with your real key, and keep the closing `'` — it closes the shell string around the header.
+> Example: `--header 'X-Membit-Api-Key:123456789'`
 
 ---
 ### Building Your First Workflow
