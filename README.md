@@ -161,3 +161,10 @@ unauthenticated endpoint that could change behaviour later.
 Written from a real setup against Membit's REST API in November 2025. No affiliation with
 either vendor. If an endpoint or credential name changes upstream, this page will be wrong
 in exactly one place, and that place is worth a pull request.
+
+## Worked example
+
+[contexta](https://github.com/maxxexee/contexta) is a Telegram bot built on this flow: a
+Telegram trigger, HTTP Request nodes for the Membit calls, Postgres for activation codes,
+and delivery back into chat. The n8n export is committed in that repo, so the shape
+described above can be read as a real graph instead of a diagram.
